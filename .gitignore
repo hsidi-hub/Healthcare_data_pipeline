@@ -1,0 +1,5 @@
+# Ignore downloaded source data
+data/raw/*
+
+# Keep the raw folder in the Git repository
+!data/raw/.gitkeep

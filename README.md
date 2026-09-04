@@ -14,6 +14,8 @@ Do not add a license unless you have selected one intentionally
 
 From the repository page:
 Code → Codespaces → Create codespace on main
+#-----------------------------------------------------------
+run: pwd, python --version and then git status
 
 ## 2. Create the Codespaces project structure
 
@@ -43,3 +45,20 @@ touch main.py
 touch profile_source.py
 touch requirements.txt
 touch .env.example
+## 3- gete the data 
+use this in the terminal to avoide dowloading the data locally 
+wget -O data/raw/synthea_csv.zip \
+  https://synthetichealth.github.io/synthea-sample-data/downloads/latest/synthea_sample_data_csv_latest.zip
+
+then run this to unzip the file :
+unzip -l data/raw/synthea_csv.zip
+and this unzip data/raw/synthea_csv.zip -d data/raw ( -d meand destination directory)
+- verify the extracted files run :
+find data/raw -type f | sort
+
+What this command means
+- find searches a directory.
+- data/raw is where the search starts.
+- -type f displays files only, not folders.
+- | sends the output of find to the next command.
+- sort displays the filenames alphabetically.
