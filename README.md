@@ -62,3 +62,9 @@ What this command means
 - -type f displays files only, not folders.
 - | sends the output of find to the next command.
 - sort displays the filenames alphabetically.
+
+## 4 Create profile_source.py
+1. Create the file
+In the main project directory, run:
+touch profile_source.py
+`
