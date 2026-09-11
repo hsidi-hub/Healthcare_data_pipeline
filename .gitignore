@@ -1,5 +1,10 @@
-# Ignore downloaded source data
-data/raw/*
+# Virtual environment
+.venv/
 
-# Keep the raw folder in the Git repository
+# Python-generated files
+__pycache__/
+*.pyc
+
+# Downloaded source data
+data/raw/*
 !data/raw/.gitkeep
